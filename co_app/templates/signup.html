@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% include 'partials/head.html' %}
+<head>
+  <title>signup</title>
+</head>
+<body>
+	{% include 'partials/nav.html'}
+
+  <h1>signup</h1>
+  <hr>
+  <form action="" method="POST">
+    {{ signup_form.as_p }}
+    {% csrf_token %}
+    <input type="submit" name="submit" value="signup">
+  </form>
+
+</body>
+</html>
